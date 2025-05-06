@@ -1,0 +1,17 @@
+/* === Main page container === */
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white; /* light mode background */
+    padding: 2rem 1rem;
+    min-height: 100vh;
+}
+
+/* google fonts */
+.cal-sans-regular {
+  font-family: "Cal Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #000;
+}
