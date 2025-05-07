@@ -1,7 +1,7 @@
 'use client'; // ensure this runs on the client side
 
-import styles from './page.module.css';
 import { profile, printProfile } from '../data/profile';
+import styles from './page.module.css';
 import Profile from '../components/Profile'
 
 // temp test 

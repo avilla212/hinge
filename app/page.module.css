@@ -136,6 +136,26 @@
 
 
 
+/* rejection prompt styling */
+.rejectionPrompt {
+  text-align: center;
+  color: #c00;
+  font-size: 0.95rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+
+
+
+
+
 /* === Responsive tweaks for mobile === */
 @media (max-width: 480px) {
   .profileCard {
