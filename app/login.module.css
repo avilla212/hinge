@@ -1,0 +1,41 @@
+/* === Login container === */
+.container {
+    max-width: 300px;         /* limits width on mobile */
+    margin: 4rem auto;        /* centers the form vertically and horizontally */
+    text-align: center;       /* centers all inner content */
+  }
+  
+  /* === Login page title === */
+  .title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* === Input fields === */
+  .input {
+    display: block;           /* places each input on its own line */
+    width: 100%;              /* full width inside container */
+    padding: 0.75rem;         /* internal spacing */
+    margin-bottom: 1rem;      /* space between inputs */
+    border-radius: 8px;       /* rounded corners */
+    border: 1px solid #ccc;   /* light gray border */
+  }
+  
+  /* === Submit button === */
+  .button {
+    background-color: #222;   /* dark background */
+    color: white;             /* white text */
+    padding: 0.75rem;
+    width: 100%;              /* button fills container width */
+    border: none;
+    border-radius: 8px;       /* rounded button */
+    cursor: pointer;          /* shows pointer on hover */
+  }
+  
+  /* === Error message styling === */
+  .error {
+    color: red;
+    margin-top: 1rem;
+    font-weight: bold;
+  }
+  

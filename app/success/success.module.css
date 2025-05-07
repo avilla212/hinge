@@ -1,40 +1,36 @@
 /* === Main page container === */
 .page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: white; /* light mode background */
-    padding: 2rem 1rem;
-    min-height: 100vh;
+  display: flex;                 /* stack content vertically */
+  flex-direction: column;
+  align-items: center;          /* center content horizontally */
+  background: white;            /* light mode background */
+  padding: 2rem 1rem;           /* vertical and horizontal padding */
+  min-height: 100vh;            /* full height view */
 }
-
-
-
-
 
 
 /* === FlipCard Container === */
 .cardWrapper {
-  width: 100%;
-  max-width: 300px;
-  height: 200px;
-  perspective: 1000px; /* enables 3D flip */
-  margin: 1.5rem auto;
+  width: 100%;                  /* full width of parent */
+  max-width: 300px;             /* limits max width for mobile */
+  height: 200px;                /* fixed card height */
+  perspective: 1000px;          /* enables 3D flip effect */
+  margin: 1.5rem auto;          /* vertical spacing and centering */
 }
 
 /* === Inner Card that gets rotated === */
 .cardInner {
-  position: relative;
+  position: relative;           /* required for absolute children */
   width: 100%;
   height: 100%;
-  transition: transform 0.6s ease;
-  transform-style: preserve-3d;
-  cursor: pointer;
+  transition: transform 0.6s ease;      /* smooth flip animation */
+  transform-style: preserve-3d;         /* keep front/back in 3D */
+  cursor: pointer;              /* pointer on hover/tap */
 }
 
 /* === Apply flip rotation when flipped === */
 .flipped {
-  transform: rotateY(180deg);
+  transform: rotateY(180deg);   /* flips card horizontally */
 }
 
 /* === Front and Back Faces === */
@@ -43,33 +39,35 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  border-radius: 16px;
-  backface-visibility: hidden;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;          /* round corners */
+  backface-visibility: hidden; /* hide back when facing front */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* subtle elevation */
 }
 
 /* === Front: Image === */
 .cardFront {
-  background: #eee;
+  background: #eee;             /* fallback color before image loads */
 }
 
+/* Image inside front of card */
 .cardImage {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  border-radius: 16px;
+  object-fit: cover;            /* fill area without distortion */
+  border-radius: 16px;          /* matches card rounding */
 }
 
 /* === Back: Text === */
 .cardBack {
   background: white;
-  transform: rotateY(180deg);
+  transform: rotateY(180deg);   /* flip to match .flipped */
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: center;          /* center text vertically */
+  justify-content: center;      /* center text horizontally */
   padding: 1rem;
 }
 
+/* Text inside back of card */
 .cardText {
   font-size: 14px;
   color: #333;
@@ -77,11 +75,7 @@
 }
 
 
-
-
-
-
-/* google fonts */
+/* === Google Fonts Style === */
 .cal-sans-regular {
   font-family: "Cal Sans", sans-serif;
   font-weight: 200;
