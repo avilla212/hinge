@@ -1,9 +1,10 @@
-'use client'
+"use client";
 
-import { useState } from 'react';
-import { useRouter } from 'next/navigation';
+import { useState } from "react";
+import { useRouter } from "next/navigation";
 import styles from "../app/page.module.css";
 import PromptSection from "./PromptSection";
+import { useFormStatus } from "react-dom";
 
 interface Prompt {
   prompt: string;
@@ -27,6 +28,7 @@ export default function Profile({
   photos,
   prompts,
 }: ProfileProps) {
+  
   // track if profile should be fade
   const [isHidden, setIsHidden] = useState(false);
   const router = useRouter(); // handle page nav
@@ -34,16 +36,31 @@ export default function Profile({
   // called when checkmark is called
   const handleAccept = () => {
     setIsHidden(true);
-    
-    setTimeout(() => {
-      router.push('/success?status=accepted')
-    }, 500)
-  }
+    // navigate to success with a query string indicating the choice
+    setTimeout(() => router.push("/success?status=accepted"), 500);
+  };
+
+  // rejection count 
+  const [rejectCount, setRejectCount] = useState(0);
+  const [rejectionMessage, setRejectionMessage] = useState("");
+  const rejectionPrompts = [
+    "Why are you even clicking this, stop it...",
+    "Seriously? again??? STOP",
+    "Okay fine ... ",
+  ];
 
   const handleReject = () => {
-    setIsHidden(true);
-    setTimeout(() => router.push('/rejected'), 500)
-  }
+    if (rejectCount < rejectionPrompts.length) {
+      setRejectionMessage(rejectionPrompts[rejectCount]);
+      setRejectCount(rejectCount + 1);
+    } else {
+      setIsHidden(true);
+      setTimeout(() => {
+        router.push("/success?status=rejected");
+      }, 500);
+    }
+  };
+
   return (
     <div className={styles.profileCard}>
       {/* First Photo */}
@@ -93,11 +110,20 @@ export default function Profile({
         <PromptSection prompt={prompts[1].prompt} answer={prompts[1].answer} />
       )}
 
+      {/* accept and rejection buttons */}
       <div className={styles.actionButtons}>
-        <button className={styles.xButton} onClick={handleReject}>❌</button>
-        <button className={styles.xButton} onClick={handleAccept}>✅</button>
-
+        <button className={styles.xButton} onClick={handleReject}>
+          ❌
+        </button>
+        <button className={styles.xButton} onClick={handleAccept}>
+          ✅
+        </button>
       </div>
+
+      {/* Rejection message displayed conditionally */}
+      {rejectionMessage && (
+        <p className={styles.rejectionPrompt}>{rejectionMessage}</p>
+      )}
     </div>
   );
 }
