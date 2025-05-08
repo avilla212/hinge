@@ -1,41 +1,45 @@
 /* === Login container === */
 .container {
-    max-width: 300px;         /* limits width on mobile */
-    margin: 4rem auto;        /* centers the form vertically and horizontally */
-    text-align: center;       /* centers all inner content */
-  }
-  
-  /* === Login page title === */
-  .title {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-  }
-  
-  /* === Input fields === */
-  .input {
-    display: block;           /* places each input on its own line */
-    width: 100%;              /* full width inside container */
-    padding: 0.75rem;         /* internal spacing */
-    margin-bottom: 1rem;      /* space between inputs */
-    border-radius: 8px;       /* rounded corners */
-    border: 1px solid #ccc;   /* light gray border */
-  }
-  
-  /* === Submit button === */
-  .button {
-    background-color: #222;   /* dark background */
-    color: white;             /* white text */
-    padding: 0.75rem;
-    width: 100%;              /* button fills container width */
-    border: none;
-    border-radius: 8px;       /* rounded button */
-    cursor: pointer;          /* shows pointer on hover */
-  }
-  
-  /* === Error message styling === */
-  .error {
-    color: red;
-    margin-top: 1rem;
-    font-weight: bold;
-  }
-  
+  max-width: 300px;
+  margin: 4rem auto;
+  text-align: center;
+}
+
+/* === Login page title === */
+.title {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: var(--foreground);
+}
+
+/* === Input fields === */
+.input {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background-color: #ffffff;
+  color: black;
+  font-weight: bold; /* ✅ makes input text bold */
+}
+
+/* === Submit button === */
+.button {
+  background-color: var(--primary);
+  color: white;
+  padding: 0.75rem;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* === Error message styling === */
+.error {
+  color: red;
+  margin-top: 1rem;
+  font-weight: bold;
+}

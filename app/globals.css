@@ -1,12 +1,16 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f5f9fb;       /* soft blue-tinted background */
+  --foreground: #2c3e50;       /* deep, calming text color */
+  --primary: #7fbcff;          /* soft sky blue */
+  --border: #ccd6dd;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #10181f;
+    --foreground: #e0f2ff;
+    --primary: #4a90e2;
+    --border: #2f3b45;
   }
 }
 
