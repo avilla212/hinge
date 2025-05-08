@@ -21,76 +21,52 @@ const successPage = () => {
       {/* message on top of screen */}
       <h1 className={styles["cal-sans-regular"] || ""}>{message}</h1>
 
-      {/* flip card component */}
-      <FlipCard
-        imagePath={image}
-        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+      <div className={styles.grid}>
+        {/* flip card component */}
+        <FlipCard
+          imagePath={image}
+          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
           Cras ac ornare turpis, vitae imperdiet mi. S
           ed non augue non enim imperdiet vulputate imperdiet congue nisi. Proin dapibus tempor pulvinar. "
-      />
+        />
 
-      <FlipCard
-        imagePath={image}
-        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        <FlipCard
+          imagePath={image}
+          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
           Cras ac ornare turpis, vitae imperdiet mi. S
           ed non augue non enim imperdiet vulputate imperdiet congue nisi. Proin dapibus tempor pulvinar. "
-      />
+        />
 
-      <FlipCard
-        imagePath={image}
-        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        <FlipCard
+          imagePath={image}
+          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
           Cras ac ornare turpis, vitae imperdiet mi. S
           ed non augue non enim imperdiet vulputate imperdiet congue nisi. Proin dapibus tempor pulvinar. "
-      />
+        />
 
-      <FlipCard
-        imagePath={image}
-        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        <FlipCard
+          imagePath={image}
+          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
           Cras ac ornare turpis, vitae imperdiet mi. S
           ed non augue non enim imperdiet vulputate imperdiet congue nisi. Proin dapibus tempor pulvinar. "
-      />
+        />
 
-      <FlipCard
-        imagePath={image}
-        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        <FlipCard
+          imagePath={image}
+          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
           Cras ac ornare turpis, vitae imperdiet mi. S
           ed non augue non enim imperdiet vulputate imperdiet congue nisi. Proin dapibus tempor pulvinar. "
-      />
+        />
 
-      <FlipCard
-        imagePath={image}
-        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        <FlipCard
+          imagePath={image}
+          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
           Cras ac ornare turpis, vitae imperdiet mi. S
           ed non augue non enim imperdiet vulputate imperdiet congue nisi. Proin dapibus tempor pulvinar. "
-      />
+        />
 
-      <FlipCard
-        imagePath={image}
-        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-          Cras ac ornare turpis, vitae imperdiet mi. S
-          ed non augue non enim imperdiet vulputate imperdiet congue nisi. Proin dapibus tempor pulvinar. "
-      />
-
-      <FlipCard
-        imagePath={image}
-        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-          Cras ac ornare turpis, vitae imperdiet mi. S
-          ed non augue non enim imperdiet vulputate imperdiet congue nisi. Proin dapibus tempor pulvinar. "
-      />
-
-      <FlipCard
-        imagePath={image}
-        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-          Cras ac ornare turpis, vitae imperdiet mi. S
-          ed non augue non enim imperdiet vulputate imperdiet congue nisi. Proin dapibus tempor pulvinar. "
-      />
-
-      <FlipCard
-        imagePath={image}
-        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-          Cras ac ornare turpis, vitae imperdiet mi. S
-          ed non augue non enim imperdiet vulputate imperdiet congue nisi. Proin dapibus tempor pulvinar. "
-      />
+     
+      </div>
     </main>
   );
 };
