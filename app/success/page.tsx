@@ -2,7 +2,12 @@
 import { useSearchParams } from "next/navigation";
 
 import image from "/public/images/1.jpg";
+import matcha from "/public/images/matcha.png";
+import city from "/public/images/city.png";
+import activity from "/public/images/activity.png";
+
 import FlipCard from "../../components/FlipCard";
+import Card from "../../components/Card";
 import React from "react";
 import styles from "../success/success.module.css";
 
@@ -65,7 +70,11 @@ const successPage = () => {
           ed non augue non enim imperdiet vulputate imperdiet congue nisi. Proin dapibus tempor pulvinar. "
         />
 
-     
+        <Card imagePath={matcha} label="Matcha" route="/food" />
+
+        <Card imagePath={city} label="City" route="/city" />
+
+        <Card imagePath={activity} label="Activity" route="/activity" />
       </div>
     </main>
   );

@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   background: var(--background);
-  padding: 2rem 1rem;
+  padding: 2rem 1rem; /* 2rem top/bottom, 1rem left/right */
   min-height: 100vh;
   width: 100%;
 }
@@ -11,7 +11,7 @@
 /* === Image Grid Wrapper */
 .grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr; /* 1 column on mobile */
   gap: 1.5rem;
   justify-items: center;
   width: 100%;
