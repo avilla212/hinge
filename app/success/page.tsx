@@ -72,7 +72,7 @@ const successPage = () => {
 
         <Card imagePath={matcha} label="Matcha" route="/food" />
 
-        <Card imagePath={city} label="City" route="/city" />
+        {/* <Card imagePath={city} label="City" route="/city" /> */}
 
         <Card imagePath={activity} label="Activity" route="/activity" />
       </div>
