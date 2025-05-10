@@ -1,31 +1,50 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { rateLimiter } from '@/lib/rateLimiter'; // Adjust path as needed
 
 export async function POST(req: NextRequest) {
-  try {
-    const { category, location } = await req.json();
-    const apiKey = process.env.YELP_API_KEY;
+  // Identify the IP address (fallback to 'unknown')
+  const ip = req.headers.get('x-forwarded-for') || 'unknown';
 
-    const url = `https://api.yelp.com/v3/businesses/search?term=${category}&location=${location}&limit=5`;
+  // Apply the rate limiter (e.g. 5 requests per 1 minute per IP)
+  const limit = rateLimiter({
+    key: `yelp:${ip}`,
+    rule: {
+      windowMs: 60 * 1000,    // 1-minute window
+      maxRequests: 5,         // 5 allowed requests
+    },
+  });
 
-    const res = await fetch(url, {
-      headers: {
-        Authorization: `Bearer ${apiKey}`,
+  // If the IP is over the limit, return a 429 response
+  if (!limit.allowed) {
+    return NextResponse.json(
+      {
+        error: 'Rate limit exceeded. Please try again later.',
+        retryAfter: `${limit.retryAfter} seconds`,
       },
-    });
-
-    const data = await res.json();
-
-    // Return top 5 businesses with name, address, rating, and image
-    const simplified = data.businesses.slice(0, 5).map((b: any) => ({
-      name: b.name,
-      address: b.location.address1,
-      rating: b.rating,
-      image_url: b.image_url,
-    }));
-
-    return NextResponse.json({ results: simplified });
-  } catch (error: any){
-    console.error('Error fetching data from Yelp API:', error);
-    return NextResponse.json({ error: 'Failed to fetch data from Yelp API' }, { status: 500 });
+      { status: 429 }
+    );
   }
+
+  // Continue with Yelp logic
+  const { category, location } = await req.json();
+  const apiKey = process.env.YELP_API_KEY;
+
+  const url = `https://api.yelp.com/v3/businesses/search?term=${category}&location=${location}&limit=5`;
+
+  const res = await fetch(url, {
+    headers: {
+      Authorization: `Bearer ${apiKey}`,
+    },
+  });
+
+  const data = await res.json();
+
+  const simplified = data.businesses.slice(0, 5).map((b: any) => ({
+    name: b.name,
+    address: b.location.address1,
+    rating: b.rating,
+    image_url: b.image_url,
+  }));
+
+  return NextResponse.json({ results: simplified });
 }
