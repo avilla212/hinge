@@ -1,10 +1,11 @@
-import React from 'react'
+import YelpActivitySearchForm from "@/components/YelpActivitySearchForm"
 
 export default function activity(){
     return (
-        <div>
-            activity
-        </div>
+        <main>
+            <h1 style={{ textAlign: 'center', margin: '2rem 0' }}> Search for activity</h1>
+            <YelpActivitySearchForm />
+        </main>
 
     )
 }
