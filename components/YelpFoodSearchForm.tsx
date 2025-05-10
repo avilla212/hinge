@@ -62,8 +62,8 @@ export default function YelpSearchForm() {
           <option value="burgers">Burgers</option>
           <option value="dessert">Dessert</option>
           <option value="coffee">Coffee</option>
-          <option value="tacos">Tacos</option>
-          <option value="vegan">Vegan</option>
+          <option value="mexica">Mexican</option>
+          <option value="vegan">Vegan .. gross</option>
         </select>
 
         <button type="submit" style={{ padding: '0.5rem 1rem' }}>Search</button>
