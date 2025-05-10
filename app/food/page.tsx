@@ -1,4 +1,4 @@
-import YelpSearchForm from '@/components/YelpSearchForm';
+import YelpSearchForm from '@/components/YelpFoodSearchForm';
 
 export default function FoodPage() {
   return (
