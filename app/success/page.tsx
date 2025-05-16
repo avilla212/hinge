@@ -29,19 +29,19 @@ function SuccessContent() {
   const flipCards = [
     {
       image: "/images/biting.jpg",
-      text: "You know I hate photos but for you, I&rsquo;ll always take them &hellip; well, 9/10 times &hellip; depends how much sleep I&rsquo;ve had.",
+      text: "You know I hate photos but for you, I will always take them with you ... well, 9/10 times ... depends how much sleep I have had.",
     },
     {
       image: "/images/kissing.jpg",
-      text: "The image didn&rsquo;t size down well so this is a selfie of you I guess haha. I get to show you off on the web now &gt;:D",
+      text: "The image didnt size down well so this is a selfie of you I guess haha. I get to show you off on the web now ..",
     },
     {
       image: "/images/awkhug.jpg",
-      text: "I look so tired in this pic but I&rsquo;m glad we got to support Kyla in her play. Even if I was falling asleep during it. You know I would always make the drive for you.",
+      text: "I look so tired in this pic but I am glad we got to support Kyla in her play. Even if I was falling asleep during it. You know I would always make the drive for you.",
     },
     {
       image: "/images/concert.jpg",
-      text: "You were shining brighter than the sun and I &hellip; was deathly ill this day. I&rsquo;m glad we got to get good food and enjoy some time together at Bea&rsquo;s concert.",
+      text: "You were shining brighter than the sun and I was was deathly ill this day. I am glad we got to get good food and enjoy some time together at Bea&rsquo;s concert.",
     },
     {
       image: "/images/weirdface.jpg",
@@ -49,7 +49,7 @@ function SuccessContent() {
     },
     {
       image: "/images/backhug.jpg",
-      text: "Another poorly sized photo from the Bea concert haha... You&rsquo;re smiling so bright as you always do. This upcoming year I would like to go to more concerts with you.",
+      text: "Another poorly sized photo from the Bea concert haha... You were smiling so bright as you always do. This upcoming year I would like to go to more concerts with you.",
     },
   ];
 
