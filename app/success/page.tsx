@@ -49,7 +49,7 @@ function SuccessContent() {
     },
     {
       image: "/images/backhug.jpg",
-      text: "Another poorly sized photo from the Bea concert haha. You&rsquo;re smiling so bright as you always do. This upcoming year I would like to go to more concerts with you.",
+      text: "Another poorly sized photo from the Bea concert haha... You&rsquo;re smiling so bright as you always do. This upcoming year I would like to go to more concerts with you.",
     },
   ];
 
