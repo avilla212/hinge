@@ -17,7 +17,7 @@ export default function YelpSearchForm() {
 
   const handleSearch = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
 
     try {
       const res = await fetch('/api/yelp', {
@@ -36,7 +36,9 @@ export default function YelpSearchForm() {
         setResults([]);
       }
     } catch (err) {
+      console.log(`${err}`)
       setError('Something went wrong.');
+
     }
   };
 

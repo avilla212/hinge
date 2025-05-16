@@ -35,8 +35,12 @@ export default function YelpActivitySearchForm() {
       } else {
         setError("No results found.");
       }
-    } catch (err: any) {
-      console.error("Error fetching data from Yelp API:", err);
+    } catch (err: unknown) {
+      if (err instanceof Error) {
+        console.error("Error fetching data from Yelp API:", err.message);
+      } else {
+        console.error("Unknown error fetching data from Yelp API:", err);
+      }
       setError("Failed to fetch data from Yelp API");
     }
   };

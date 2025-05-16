@@ -39,7 +39,14 @@ export async function POST(req: NextRequest) {
 
   const data = await res.json();
 
-  const simplified = data.businesses.slice(0, 5).map((b: any) => ({
+  type YelpBusiness = {
+    name: string;
+    location: { address1: string };
+    rating: number;
+    image_url: string;
+  };
+
+  const simplified = (data.businesses as YelpBusiness[]).slice(0, 5).map((b: YelpBusiness) => ({
     name: b.name,
     address: b.location.address1,
     rating: b.rating,
