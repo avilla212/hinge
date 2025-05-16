@@ -28,11 +28,11 @@ function SuccessContent() {
 
   const flipCards = [
     {
-      image: "/images/biting.jpg",
+      image: "/images/biting.JPG",
       text: "You know I hate photos but for you, I will always take them with you ... well, 9/10 times ... depends how much sleep I have had.",
     },
     {
-      image: "/images/kissing.jpg",
+      image: "/images/kissing.JPG",
       text: "The image didnt size down well so this is a selfie of you I guess haha. I get to show you off on the web now ..",
     },
     {
