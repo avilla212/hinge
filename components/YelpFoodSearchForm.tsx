@@ -17,6 +17,7 @@ export default function YelpSearchForm() {
 
   const handleSearch = async (e: React.FormEvent) => {
     e.preventDefault();
+    
 
     try {
       const res = await fetch('/api/yelp', {

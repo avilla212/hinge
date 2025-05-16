@@ -11,7 +11,7 @@ const mockUsers: Record<string, string> = {
   user1: "test1",
 };
 
-export default function loginPage() {
+export default function LoginPage() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");

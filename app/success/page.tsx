@@ -7,7 +7,6 @@ import Card from "../../components/Card";
 import matcha from "/public/images/matcha.png";
 import activity from "/public/images/activity.png";
 
-
 import styles from "../success/success.module.css";
 
 export default function SuccessPage() {
@@ -25,12 +24,30 @@ export default function SuccessPage() {
       : "You didn't have a choice anyways :D now click on the images below for the surprise";
 
   const flipCards = [
-    { image: "/images/biting.jpg", text: "You know I hate photos but for you, I'll always take them ... well, 9/10 times .. depends how much sleep I've had." },
-    { image: "/images/kissing.jpg", text: "The image didn't size down well so this is a selfie of you I guess haha. I get to show you off on the web now >:D" },
-    { image: "/images/awkhug.jpg", text: "I look so tired in this pic but I'm glad we got to support Kyla in her play. Even if I was falling asleep during it. You know I would always make the drive for you." },
-    { image: "/images/concert.jpg", text: "You were shining brighter than the sun and I ... was deathly ill this day. I'm glad we got to get good food and enjoy some time together at bea's concert." },
-    { image: "/images/weirdface.jpg", text: "Why do I look so slow here lol. You look beautiful as always though." },
-    { image: "/images/backhug.jpg", text: "Another poorly sized photo from the bea concert haha. You're smiling so bright as you always do. This upcoming year I would like to go to more concerts with you." },
+    {
+      image: "/images/biting.jpg",
+      text: "You know I hate photos but for you, I&rsquo;ll always take them &hellip; well, 9/10 times &hellip; depends how much sleep I&rsquo;ve had.",
+    },
+    {
+      image: "/images/kissing.jpg",
+      text: "The image didn&rsquo;t size down well so this is a selfie of you I guess haha. I get to show you off on the web now &gt;:D",
+    },
+    {
+      image: "/images/awkhug.jpg",
+      text: "I look so tired in this pic but I&rsquo;m glad we got to support Kyla in her play. Even if I was falling asleep during it. You know I would always make the drive for you.",
+    },
+    {
+      image: "/images/concert.jpg",
+      text: "You were shining brighter than the sun and I &hellip; was deathly ill this day. I&rsquo;m glad we got to get good food and enjoy some time together at Bea&rsquo;s concert.",
+    },
+    {
+      image: "/images/weirdface.jpg",
+      text: "Why do I look so slow here lol. You look beautiful as always though.",
+    },
+    {
+      image: "/images/backhug.jpg",
+      text: "Another poorly sized photo from the Bea concert haha. You&rsquo;re smiling so bright as you always do. This upcoming year I would like to go to more concerts with you.",
+    },
   ];
 
   return (

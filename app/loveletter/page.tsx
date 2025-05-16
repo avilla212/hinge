@@ -1,7 +1,5 @@
 "use client";
-import Image from "next/image";
-import TalkingImage from "@/components/TalkingImage"; // ✅ import the interactive image component
-import styles from "./loveletter.module.css"; // optional for custom styles
+import TalkingImage from "@/components/TalkingImage"; 
 
 export default function LoveLetterPage() {
   return (
@@ -45,7 +43,7 @@ export default function LoveLetterPage() {
         to spend nights with you and I love getting called out on my inadequacies by you. Thank you for still choosing me.
       </p>
 
-      {/* ✅ Talking image #1 */}
+      {/*  Talking image #1 */}
       <TalkingImage
         src="/images/flash.jpg"
         alt="Memory 1"
@@ -60,7 +58,7 @@ export default function LoveLetterPage() {
         I love you so much. I hope to spend this life and every one after with you.
       </p>
 
-       {/* ✅ Talking image #2 */}
+       {/*  Talking image #2 */}
       <TalkingImage
         src="/images/BCD.jpg"
         alt="Memory 2"
@@ -74,7 +72,7 @@ export default function LoveLetterPage() {
         in their own skin and making BANK from it. You deserve every bit of happiness and success this world has to offer and I hope I can contribute to that.
       </p>
 
-      {/* ✅ Talking image #2 */}
+      {/*  Talking image #2 */}
       <TalkingImage
         src="/images/innout.jpg"
         alt="Memory 2"

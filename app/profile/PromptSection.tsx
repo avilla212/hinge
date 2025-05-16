@@ -2,7 +2,7 @@ import styles from './page.module.css';
 
 interface Props {
     prompt: string,
-    answer: String
+    answer: string
 }
 
 export default function PromptSection({prompt, answer}: Props) {

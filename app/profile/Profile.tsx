@@ -4,7 +4,6 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import styles from "./page.module.css";
 import PromptSection from "./PromptSection";
-import { useFormStatus } from "react-dom";
 
 interface Prompt {
   prompt: string;
@@ -61,7 +60,7 @@ export default function Profile({
   };
 
   return (
-    <div className={styles.profileCard}>
+    <div className={`${styles.profileCard} ${isHidden ? styles.fadeOut : ''}`}>
       {/* First Photo */}
       <div className={styles.imageCard}>
         <img
