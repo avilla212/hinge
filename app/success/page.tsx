@@ -1,5 +1,7 @@
 "use client";
+
 import { useSearchParams, useRouter } from "next/navigation";
+import { Suspense } from "react";
 
 import FlipCard from "../../components/FlipCard";
 import Card from "../../components/Card";
@@ -9,7 +11,8 @@ import activity from "/public/images/activity.png";
 
 import styles from "../success/success.module.css";
 
-export default function SuccessPage() {
+// Extract the logic using useSearchParams into its own component
+function SuccessContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const status = searchParams.get("status");
@@ -80,5 +83,13 @@ export default function SuccessPage() {
         </button>
       </div>
     </main>
+  );
+}
+
+export default function SuccessPage() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <SuccessContent />
+    </Suspense>
   );
 }
