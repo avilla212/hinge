@@ -7,12 +7,12 @@ import Card from "../../components/Card";
 import matcha from "/public/images/matcha.png";
 import activity from "/public/images/activity.png";
 
-import img1 from "/public/images/biting.jpg";
-import img2 from "/public/images/kissing.jpg";
-import img3 from "/public/images/awkhug.jpg";
-import img4 from "/public/images/concert.jpg";
-import img5 from "/public/images/weirdface.jpg";
-import img6 from "/public/images/backhug.jpg";
+import img1 from "/images/biting.jpg";
+import img2 from "/images/kissing.jpg";
+import img3 from "/images/awkhug.jpg";
+import img4 from "/images/concert.jpg";
+import img5 from "/images/weirdface.jpg";
+import img6 from "/images/backhug.jpg";
 
 import styles from "../success/success.module.css";
 
