@@ -81,18 +81,15 @@ export default function LoveLetterPage() {
       />
 
       <p>
-        <p>
-          I hope that down the line, we get to live our dreams together, travel
-          with your family and mine and that you get to realize that your hard
-          work paid off and you no longer have to deal with the bullshit you do
-          on a day to day basis. You deserve so much and I promise you I am
-          working harder and harder each day to be able to support our dreams.
-          One day you will be living your best life, bringing smiles to
-          people&rsquo;s faces by giving them hairstyles that make them
-          confident in their own skin and making BANK from it. You deserve every
-          bit of happiness and success this world has to offer and I hope I can
-          contribute to that.
-        </p>
+        I hope that down the line, we get to live our dreams together, travel
+        with your family and mine and that you get to realize that your hard
+        work paid off and you no longer have to deal with the bullshit you do on
+        a day to day basis. You deserve so much and I promise you I am working
+        harder and harder each day to be able to support our dreams. One day you
+        will be living your best life, bringing smiles to people&rsquo;s faces
+        by giving them hairstyles that make them confident in their own skin and
+        making BANK from it. You deserve every bit of happiness and success this
+        world has to offer and I hope I can contribute to that.
       </p>
 
       {/*  Talking image #2 */}
