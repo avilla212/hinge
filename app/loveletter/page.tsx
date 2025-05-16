@@ -39,8 +39,8 @@ export default function LoveLetterPage() {
       <p>
         I love so many things about you, I love the way you laugh while you
         scroll tiktok or the face you make when I find out what you want to eat.
-        I love the way you've talked about your loved ones and those close to
-        you since the day I met you. I love how you always get shit done, no
+        I love the way you&rsquo;ve talked about your loved ones and those close
+        to you since the day I met you. I love how you always get shit done, no
         matter what is thrown your way. Even if you may complain or need a
         shoulder to lean on, you always get it done ... I hope I can always be
         that shoulder for you. I love how you are always happy to be with me
@@ -83,15 +83,15 @@ export default function LoveLetterPage() {
       <p>
         <p>
           I hope that down the line, we get to live our dreams together, travel
-          with your family and mine (my mom .. ) and that you get to realize
-          that your hard work paid off and you no longer have to deal with the
-          bullshit you do on a day to day basis. You deserve so much and I
-          promise you I am working harder and harder each day to be able to
-          support our dreams. One day you will be living your best life,
-          bringing smiles to people&rsquo;s faces by giving them hairstyles that
-          make them confident in their own skin and making BANK from it. You
-          deserve every bit of happiness and success this world has to offer and
-          I hope I can contribute to that.
+          with your family and mine and that you get to realize that your hard
+          work paid off and you no longer have to deal with the bullshit you do
+          on a day to day basis. You deserve so much and I promise you I am
+          working harder and harder each day to be able to support our dreams.
+          One day you will be living your best life, bringing smiles to
+          people&rsquo;s faces by giving them hairstyles that make them
+          confident in their own skin and making BANK from it. You deserve every
+          bit of happiness and success this world has to offer and I hope I can
+          contribute to that.
         </p>
       </p>
 
